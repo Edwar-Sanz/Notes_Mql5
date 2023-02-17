@@ -34,6 +34,8 @@ int OnCalculate(const int rates_total, const int prev_calculated, const datetime
 
    
    CopyBuffer(handle_ima, 0, 0, rates_total, imaBuffer);
+   
+   Print(imaBuffer[rates_total - 1]);
 
    return(rates_total);
 }
