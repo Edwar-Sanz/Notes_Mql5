@@ -8,6 +8,17 @@ void OnStart(){
    // el tipo datetime
    
    datetime date = D'01.01.2023  16:30:00';
+
+
+	// ejemplo de como hacer condicion de tiempo
+
+		string tm = TimeToString(time[i],TIME_MINUTES);
+
+         if (tm <= "16:30" || tm >= "22:30"){ 
+            vela_angleBuffer[i] = 0;
+         }else{
+            vela_angleBuffer[i] = 1;   
+         }
    
 	/*
 	
