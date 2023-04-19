@@ -17,7 +17,7 @@ void OnTick(){
    
    for(int i= 0;   i < order_totals;   i++){   
       order_ticket = OrderGetTicket( i );
-      
+      //Funciones comerciales
       if (OrderSelect(order_ticket) == true){
          Print("Volumen= ", OrderGetDouble(ORDER_VOLUME_CURRENT),
                "  Tipo de orden: tipo= ", OrderGetInteger(ORDER_TYPE), " ",EnumToString(ORDER_TYPE) , 
